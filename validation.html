@@ -42,13 +42,15 @@
            document.getElementById("fnamepara").innerHTML="Must contain more than 3 characters";
            return false;  
         }
-		else if(!nameRegx.test(fname)){
+		
+		 else if(!nameRegx.test(fname)){
 			// alert("Invalid first name format");  
             document.getElementById("fnamepara").innerHTML="Invalid format";
            return false;
 
 		}
-		else if(lname==null || lname=="" || lname.length<=3){
+		
+		 else if(lname==null || lname=="" || lname.length<=3){
 			// alert("Second Name can't be blank or must contain more than 3 characters"); 
             document.getElementById("lnamepara").innerHTML="Must contain more than 3 characters"; 
             return false;
@@ -81,12 +83,9 @@
             return false;
 		}
 
-
-
         else{
 			console.log("success");
-			document.getElementById("repswdpara").innerHTML="habhtehtert";
-            // alert("Registration successful")
+            alert("Registration successful")
 		}
 
 		}
@@ -95,7 +94,7 @@
 
 		<div class="wrapper" style="background-image: url('images/bg-registration-form-2.jpg');">
 			<div class="inner">
-				<form name="myform" method="get" action="" onsubmit="return validateform()" >
+				<form name="myform" method="get" action="./new.html" onsubmit="return validateform()" >
 					<h3>Registration Form</h3>
 					<div class="form-group">
 						<div class="form-wrapper">
@@ -138,5 +137,5 @@
 			</div>
 		</div>
 		
-	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	</body>
 </html>
